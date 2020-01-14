@@ -15,6 +15,7 @@ import { ReferenceComponent } from './reference/reference.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgxSpinnerModule } from '../../../node_modules/ngx-spinner';
 import { ProjectsComponent } from './projects/projects.component';
+import { ArticleComponent } from './experience/article/article.component';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import { ProjectsComponent } from './projects/projects.component';
     EducationComponent,
     ReferenceComponent,
     ContactComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ArticleComponent
   ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
