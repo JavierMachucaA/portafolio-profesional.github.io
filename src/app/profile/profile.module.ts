@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
@@ -16,13 +16,16 @@ import { ContactComponent } from './contact/contact.component';
 import { NgxSpinnerModule } from '../../../node_modules/ngx-spinner';
 import { ProjectsComponent } from './projects/projects.component';
 import { ArticleComponent } from './experience/article/article.component';
+import { AngularMaterialModule } from '../angular-material.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     SnotifyModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    AngularMaterialModule
+
   ],
   declarations: [
     ProfileComponent,
@@ -38,10 +41,11 @@ import { ArticleComponent } from './experience/article/article.component';
     ContactComponent,
     ProjectsComponent,
     ArticleComponent
-  ],
+    ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
     SnotifyService,
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProfileModule { }

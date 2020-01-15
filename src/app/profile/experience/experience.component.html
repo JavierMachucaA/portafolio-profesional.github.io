@@ -6,10 +6,10 @@
             <div class="col-md-12">
                <div class="timeline-centered">
                   <!--<app-article *ngFor="let article of articles" [article]="article"></app-article>-->
-                  <article *ngFor="let article of articles" class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                  <article *ngFor="let article of articles;let i = index" [attr.data-index]="i" class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
                      <div class="timeline-entry-inner">
-                        <div class="timeline-icon color-1">
-                           <i class="icon-pen2"></i>
+                        <div class="timeline-icon color-{{i+1}}" >
+                           <mat-icon style="vertical-align: middle;" >event_available</mat-icon>
                         </div>
                         <div class="timeline-label">
                            <h2>{{article.charge}} <span>{{article.intervalTime}}</span></h2>
