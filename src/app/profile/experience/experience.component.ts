@@ -25,7 +25,7 @@ export class ExperienceComponent implements OnInit {
       {
         id: 2,
         charge : 'Desarrollador Junior',
-        intervalTime : 'Enero - Agosto 2019',
+        intervalTime : 'Enero - Agosto 2018',
         compay : 'Wiseconn',
         description: `Como desarrollador, se aporta en proyectos Java capturando información de servicio rest y
                       se apoya en cambios efectuados sobre aplciación de escritorio Java Swing del producto que
@@ -34,8 +34,8 @@ export class ExperienceComponent implements OnInit {
       },
       {
         id: 3,
-        charge : 'Ingeniero en Proyectos',
-        intervalTime : 'Enero - Agosto 2019',
+        charge : 'Desarrollador',
+        intervalTime : 'Enero 2016 - Enero 2018',
         compay : 'Accenture',
         description: `Como desarrollador, se aporta en proyectos Java capturando información de servicio rest y
                       se apoya en cambios efectuados sobre aplciación de escritorio Java Swing del producto que
