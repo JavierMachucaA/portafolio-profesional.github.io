@@ -3,3 +3,12 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+mat-icon.icon {
+    font-size: 10px;
+    height: 40px !important;
+    width: 40px !important;
+}
+
+.center-text {
+    margin-top: auto; margin-bottom: auto;
+}
