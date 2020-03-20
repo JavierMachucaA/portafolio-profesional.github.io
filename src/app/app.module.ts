@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
 import { MatIconModule } from '@angular/material';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 const routes: Routes = [
@@ -33,7 +34,10 @@ const config: ExtraOptions = {
     RouterModule.forRoot(routes, config),
     ProfileModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    MatExpansionModule,
+  ],
+  exports: [
   ],
   providers: [],
   bootstrap: [AppComponent],

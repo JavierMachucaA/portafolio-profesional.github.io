@@ -12,4 +12,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  public navigateSkills(route: string) {
+    const element = document.getElementById(route);
+    element.scrollIntoView({behavior: 'smooth'});
+  }
+
 }

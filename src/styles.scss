@@ -10,5 +10,25 @@ mat-icon.icon {
 }
 
 .center-text {
-    margin-top: auto; margin-bottom: auto;
+    margin-top: auto !important; margin-bottom: auto !important;
+}
+
+.mb-none {
+    margin-bottom: unset !important;
+}
+
+.with-expand{
+    width: 100% !important;
+}
+
+.set-height {
+    height: 10px;
+}
+
+.vertical-center {
+    margin-top: 12px;
+}
+
+.vertical-center2{
+    margin-top: 9px;
 }

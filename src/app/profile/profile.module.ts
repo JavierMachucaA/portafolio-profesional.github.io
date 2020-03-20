@@ -17,6 +17,9 @@ import { NgxSpinnerModule } from '../../../node_modules/ngx-spinner';
 import { ProjectsComponent } from './projects/projects.component';
 import { ArticleComponent } from './experience/article/article.component';
 import { AngularMaterialModule } from '../angular-material.module';
+import { SkillDescComponent } from './skills/skill-desc/skill-desc.component';
+import { MatExpansionModule } from '@angular/material';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   imports: [
@@ -24,8 +27,12 @@ import { AngularMaterialModule } from '../angular-material.module';
     FormsModule,
     SnotifyModule,
     NgxSpinnerModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    MatExpansionModule
 
+  ],
+  exports: [
+    MatExpansionModule,
   ],
   declarations: [
     ProfileComponent,
@@ -40,11 +47,13 @@ import { AngularMaterialModule } from '../angular-material.module';
     ReferenceComponent,
     ContactComponent,
     ProjectsComponent,
-    ArticleComponent
+    ArticleComponent,
+    SkillDescComponent
     ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
     SnotifyService,
+    {provide: APP_BASE_HREF, useValue: '/'}
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

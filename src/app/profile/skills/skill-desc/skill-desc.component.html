@@ -1,0 +1,30 @@
+<mat-expansion-panel *ngFor="let skill of skills">
+  <mat-expansion-panel-header >
+    <div class="row with-expand">
+      <div class="col-2">
+        <div class="row progress-container progress-primary mb-none" style="margin-left: 1px;">
+          &nbsp; &nbsp;
+          <mat-icon class="icon" [svgIcon]="skill.icon" [inline]="true">
+          </mat-icon>
+          &nbsp;
+          <span class="progress-badge center-text">{{skill.name}}</span>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="row progress progress-container progress-primary mb-none vertical-center">
+          <div class="progress-bar progress-bar-primary set-height" data-aos="progress-full" data-aos-offset="10"
+            data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style="height: 14px;" [ngStyle]="{'width':skill.percentage + '%'}">
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="row vertical-center2">
+          &nbsp; &nbsp;
+          <span class="progress-value">{{skill.percentage}}</span>
+        </div>
+      </div>
+    </div>
+  </mat-expansion-panel-header>
+  This the expansion 1 content
+</mat-expansion-panel>
