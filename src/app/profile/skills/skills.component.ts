@@ -8,7 +8,7 @@ import { Skill } from 'src/app/class/skill.class';
 })
 export class SkillsComponent implements OnInit {
   public title = 'Skills';
-  public skills: Skill[] = [];
+  public skills: Skill[] = []; 
   constructor() {
     this.skills.push(new Skill('Java', 'java', 80, ''));
     this.skills.push(new Skill('PHP', 'php', 60, ''));
@@ -18,7 +18,5 @@ export class SkillsComponent implements OnInit {
    }
 
   ngOnInit() {
-    console.log('skills', this.skills);
   }
-
 }

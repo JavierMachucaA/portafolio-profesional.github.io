@@ -1,0 +1,33 @@
+.margin-for-card{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+mat-icon.icon-rotate:focus{
+    animation: rotate 1s ease-in-out 0s;
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*.mat-expansion-panel-header, .ng-animating.mat-expansion-panel-header {
+    background: green !important;
+    height: 100px !important;
+}*/
+
+
+/*.ng-animating mat-card mat-expansion-panel-header {
+    height: 100px !important;
+    background: green !important;
+}
+.ng-animating mat-card div.mat-expansion-panel-content {
+    height: 100px !important;
+    visibility: hidden;
+    background: green !important;
+}
+
+::ng-deep .ng-animating mat-card  .mat-expansion-panel-content{
+    height: 100px !important;
+    background: green !important;
+}*/

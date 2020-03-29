@@ -20,6 +20,7 @@ import { AngularMaterialModule } from '../angular-material.module';
 import { SkillDescComponent } from './skills/skill-desc/skill-desc.component';
 import { MatExpansionModule } from '@angular/material';
 import { APP_BASE_HREF } from '@angular/common';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   imports: [
@@ -28,8 +29,8 @@ import { APP_BASE_HREF } from '@angular/common';
     SnotifyModule,
     NgxSpinnerModule,
     AngularMaterialModule,
-    MatExpansionModule
-
+    MatExpansionModule,
+    MatListModule
   ],
   exports: [
     MatExpansionModule,

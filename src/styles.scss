@@ -32,3 +32,28 @@ mat-icon.icon {
 .vertical-center2{
     margin-top: 9px;
 }
+
+/*::ng-deep .ng-animating div mat-accordion mat-expansion-panel mat-expansion-panel-header {
+    background: green !important;
+    height: 100px !important;
+  }
+
+  ::ng-deep .ng-animating div mat-accordion mat-expansion-panel div.mat-expansion-panel-content {
+    visibility: hidden;
+    background: green !important;
+    height: 100px !important;
+}*/
+
+.mat-accordion mat-expansion-panel {
+    mat-expansion-panel-header {
+      height: 100px !important;
+      background-color: green; // height may be different for you
+    }
+    
+    &.mat-expanded {
+      mat-expansion-panel-header {
+        height: 100px !important; // height may be different for you
+        background-color: green;
+      }
+    }
+  }
