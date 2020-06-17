@@ -5,13 +5,13 @@ export class Skill {
     icon: string;
     percentage: number;
     description: string;
-    skillSubitem: SkillSubitem;
+    skillSubitems: SkillSubitem[];
 
-    constructor(name: string, icon: string, percentage: number, description ?: string, skillSubitem ?: SkillSubitem) {
+    constructor(name: string, icon: string, percentage: number, description ?: string, skillSubitem ?: SkillSubitem[]) {
         this.name = name;
         this.icon = icon;
         this.percentage = percentage;
         this.description = description;
-        this.skillSubitem = skillSubitem;
+        this.skillSubitems = skillSubitem;
     }
 }

@@ -1,0 +1,51 @@
+.gallery{
+    background-color: rgb(219, 228, 144);
+    border: 10px solid transparent;
+    
+}
+
+.picture {
+    width: 70%;
+    -webkit-box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: .3s ease;
+    background-color: red;
+    opacity: 1;
+    
+}
+
+.picture:hover {
+    opacity: 0;
+}
+
+.gallery div:hover .overlay {
+    opacity: 0;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.mat-icon {
+    color: white;
+    font-size: 250px;
+    position:  absolute;
+    display: inline-flex;
+    justify-content: center;
+    top: 5%;
+    left: 12%;
+    width: auto;
+    height: auto;
+    /*transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);*/
+    text-align: center;
+    opacity: 0;
+}
+
+.mat-icon:hover {
+    opacity: 1;
+}
+  

@@ -1,10 +1,10 @@
 <mat-nav-list *ngIf="skillsList">
   <mat-list-item *ngFor="let skillItem of skillsList" style="height: auto;">
-    <div matLine class="row">
+    <div matLine >
+      <div class="row">
       <div class="col-2">
         <mat-icon matListIcon class="icon" [svgIcon]="skillItem.skill.icon" [inline]="true"></mat-icon>
       </div>
-    </div>
     <div class="col-2">
       <span class="progress-badge center-text">{{skillItem.skill.name}}</span>
     </div>
@@ -30,11 +30,11 @@
       <mat-icon *ngIf="skillItem.isOpen" class="icon icon-rotate" style="font-size: 30px;" (click)="changeIcon(skillItem)">{{skillItem.openIcon}}</mat-icon>
       <mat-icon *ngIf="!skillItem.isOpen" class="icon icon-rotate" style="font-size: 30px;" (click)="changeIcon(skillItem)">{{skillItem.closeIcon}}</mat-icon>
     </div>
-    <div matLine >
-      <br matLine>
-      <p  matLine *ngIf="!skillItem.isOpen">
-        <span> {{skillItem.skill.name}} </span>
-        <span class="demo-2"> -- {{skillItem.skill.name}} </span>
+    </div>
+    </div>
+    <div matLine data-aos="fade-up" *ngIf="!skillItem.isOpen" >
+      <p >
+        <label>{{ skillItem.skill.skillSubitems | skillListColon}}</label>
       </p>
     </div>
     

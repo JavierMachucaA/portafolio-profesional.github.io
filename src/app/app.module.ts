@@ -8,8 +8,10 @@ import { ProfileModule } from './profile/profile.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
-import { MatIconModule } from '@angular/material';
+import { MatIconModule, MatGridListModule } from '@angular/material';
 import { MatExpansionModule } from '@angular/material/expansion';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 const routes: Routes = [
@@ -36,6 +38,7 @@ const config: ExtraOptions = {
     HttpClientModule,
     MatIconModule,
     MatExpansionModule,
+    MatDialogModule
   ],
   exports: [
   ],

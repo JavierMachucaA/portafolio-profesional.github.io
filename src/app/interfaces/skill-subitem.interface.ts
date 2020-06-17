@@ -1,8 +1,8 @@
 import { Skill } from '../class/skill.class';
 
 export interface SkillSubitem {
-    id: number;
+    id?: number;
     name: string;
-    description: string;
-    time: string;
+    description?: string;
+    time?: string;
 }
