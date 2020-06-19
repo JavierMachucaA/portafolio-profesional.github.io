@@ -1,14 +1,40 @@
 <div class="section" id="certifications">
     <div class="container">
         <div class="h4 text-center mb-4 title">{{title}}</div>
-        <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="card" *ngFor="let c of certificates; let i = index" [attr.data-index]="i" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="card-body" >
+                <mat-grid-list cols="12" rowHeight="1:1">
+                    <mat-grid-tile colspan="4" rowspan="3" class="gallery">
+                        <img *ngIf="showCertificate" class="picture" 
+                            [src]="c.name" alt="Image" />
+                        <div class="overlay">
+                            <a  class="icon" (click)="showDialog()" title="Ver más+"> <!---->
+                                <mat-icon>pageview</mat-icon>
+                            </a>
+                        </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="7" rowspan="1" class="titleText">
+                        <h3 mat-subheader><b>{{c.title}}</b></h3>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="7" rowspan="2" class="descriptionText" >
+                        <p>
+                            <b><i>Descripción:</i></b>
+                            <br>
+                            <br>
+                            {{c.description}}
+                        </p>
+                    </mat-grid-tile>                  
+                </mat-grid-list>
+            </div>
+            </div>
+            <!--<div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div class="card-body">
                 <mat-grid-list cols="12" rowHeight="1:1">
                     <mat-grid-tile colspan="4" rowspan="3" class="gallery">
                         <img *ngIf="showCertificate" class="picture" 
                             src="assets/images/certifications/certificado-nodejs.jpg" alt="Image" />
                         <div class="overlay">
-                            <a  class="icon" (click)="showDialog()" title="User Profile"> <!---->
+                            <a  class="icon" (click)="showDialog()" title="User Profile"> 
                                 <mat-icon>pageview</mat-icon>
                             </a>
                         </div>
@@ -16,18 +42,18 @@
                     <mat-grid-tile colspan="7" rowspan="1">
                         <h3 mat-subheader><b>Node : De Cero a Experto</b></h3>
                     </mat-grid-tile>
-                    <mat-grid-tile colspan="7" rowspan="2" class="" style="position: absolute;margin-left: 2%;">
-                        
+                    <mat-grid-tile colspan="7" rowspan="2" class="descriptionText" style="">
                         <p>
                             <b><i>Descripción:</i></b>
                             <br>
                             <br>
                             En este curso se abarcan los temas: MongoDB, SocketIO, Handlebars, MLab, JWT, Git, GitHub,
                             Robo 3T, JSON, Google Services, Google APIs, Heroku, MySQL, TypeScript, PostMan,Express,
-                            YARGS, Aplicaciones de consola, Paquetes, NPM, RESTServer, entre otros temas</p>
-                    </mat-grid-tile>
+                            YARGS, Aplicaciones de consola, Paquetes, NPM, RESTServer, entre otros temas
+                        </p>
+                    </mat-grid-tile>                  
                 </mat-grid-list>
             </div>
+            </div>-->
         </div>
-    </div>
 </div>

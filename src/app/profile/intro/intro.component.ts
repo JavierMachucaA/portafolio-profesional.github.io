@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConstantsUtils } from 'src/app/utils/constants.utils';
 
 @Component({
   selector: 'app-intro',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit {
 
+  public constants = ConstantsUtils;
+  
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }

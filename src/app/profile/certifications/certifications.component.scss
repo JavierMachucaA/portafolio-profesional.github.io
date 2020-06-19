@@ -1,6 +1,6 @@
 .gallery{
     background-color: rgb(219, 228, 144);
-    border: 10px solid transparent;
+    border-radius: 30px 30px 0px 0px;
     
 }
 
@@ -16,11 +16,7 @@
 }
 
 .picture:hover {
-    opacity: 0;
-}
-
-.gallery div:hover .overlay {
-    opacity: 0;
+    opacity: 0.5;
 }
 
 .image {
@@ -31,12 +27,12 @@
 
 .mat-icon {
     color: white;
-    font-size: 250px;
+    font-size: 150px;
     position:  absolute;
     display: inline-flex;
     justify-content: center;
-    top: 5%;
-    left: 12%;
+    top: 18%;
+    left: 28%;
     width: auto;
     height: auto;
     /*transform: translate(-50%, -50%);
@@ -47,5 +43,16 @@
 
 .mat-icon:hover {
     opacity: 1;
+}
+
+.descriptionText{
+    position: absolute;
+    margin-left: 2%; 
+    top:-10px;
+}
+
+.titleText {
+    justify-content: left !important;
+    left: 0;
 }
   
