@@ -1,10 +1,11 @@
 <div class="section" id="certifications">
     <div class="container">
         <div class="h4 text-center mb-4 title">{{title}}</div>
-        <div class="card" *ngFor="let c of certificates; let i = index" [attr.data-index]="i" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="card" *ngFor="let c of certificates; let i = index" [attr.data-index]="i" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+         [ngClass]="[i == 0 ? 'withoutBottom' : '',  i != 0  ? 'interList' : '']" >
             <div class="card-body" >
                 <mat-grid-list cols="12" rowHeight="1:1">
-                    <mat-grid-tile colspan="4" rowspan="3" class="gallery">
+                    <mat-grid-tile colspan="4" rowspan="3" class="gallery" [style.background-color]="c.color">
                         <img *ngIf="showCertificate" class="picture" 
                             [src]="c.name" alt="Image" />
                         <div class="overlay">
@@ -14,7 +15,7 @@
                         </div>
                     </mat-grid-tile>
                     <mat-grid-tile colspan="7" rowspan="1" class="titleText">
-                        <h3 mat-subheader><b>{{c.title}}</b></h3>
+                        <h5 mat-subheader><b>{{c.title}}</b></h5>
                     </mat-grid-tile>
                     <mat-grid-tile colspan="7" rowspan="2" class="descriptionText" >
                         <p>

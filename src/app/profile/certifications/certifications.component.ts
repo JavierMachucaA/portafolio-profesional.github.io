@@ -23,16 +23,16 @@ export class CertificationsComponent implements OnInit {
         description: `En este curso se abarcan los temas: MongoDB, SocketIO, Handlebars,` +
         `MLab, JWT, Git, GitHub,Robo 3T, JSON, Google Services, Google APIs, Heroku, MySQL,` +
         `TypeScript, PostMan,Express, YARGS, Aplicaciones de consola, Paquetes, NPM,` + 
-        `RESTServer, entre otros temas`
+        `RESTServer, entre otros temas`,
+        color: 'rgb(219, 228, 144)'
       },
-      /*{
-        name: this.pathCertificates + '/' + 'certificado-nodejs.jpg',
-        title: 'Node : De Cero a Experto',
-        description: `En este curso se abarcan los temas: MongoDB, SocketIO, Handlebars,` +
-        `MLab, JWT, Git, GitHub,Robo 3T, JSON, Google Services, Google APIs, Heroku, MySQL,` +
-        `TypeScript, PostMan,Express, YARGS, Aplicaciones de consola, Paquetes, NPM,` + 
-        `RESTServer, entre otros temas`
-      }*/
+      {
+        name: this.pathCertificates + '/' + 'certificado-angular.jpg',
+        title: 'Angular: De cero a experto creando aplicaciones (Angular 9+)',
+        description: `Las bases de Angular, TypeScript, ECMAScript 6, Sockets,`+
+        `Angular CLI, Local Storage, Bootstrap 4, Spotify API, Youtube API, entre otras tecnologías`,
+        color: 'rgb(143, 188, 143)'
+      }
     ];
   }
 
