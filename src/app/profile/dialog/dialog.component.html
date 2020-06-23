@@ -1,4 +1,17 @@
-<h2 mat-dialog-title>INFO</h2>
+<div *ngIf="data.type == dialogType.CERTIFICATE">
+  <h2 mat-dialog-title>{{data.title}}</h2>
+  <mat-dialog-content>
+    <div>
+      <img [src]="data.source" >
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-raised-button color="primary" (click)="close()" mat-dialog-close>
+      Cerrar
+    </button>
+  </mat-dialog-actions>
+</div>
+<!--<h2 mat-dialog-title>INFO</h2>
 <mat-dialog-content>
   <div>
     <mat-icon>info</mat-icon>Hello
@@ -9,7 +22,7 @@
   <button mat-raised-button color="primary" (click)="close()" mat-dialog-close>
     Close
   </button>
-</mat-dialog-actions>
+</mat-dialog-actions>-->
 <!--<h1 mat-dialog-title>Hi {{data.name}}</h1>
 <div mat-dialog-content>
   <p>What's your favorite animal?</p>

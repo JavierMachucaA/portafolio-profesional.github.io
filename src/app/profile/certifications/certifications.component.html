@@ -9,7 +9,7 @@
                         <img *ngIf="showCertificate" class="picture" 
                             [src]="c.name" alt="Image" />
                         <div class="overlay">
-                            <a  class="icon" (click)="showDialog()" title="Ver más+"> <!---->
+                            <a  class="icon" (click)="showDialog(c)" title="Ver más+"> <!---->
                                 <mat-icon>pageview</mat-icon>
                             </a>
                         </div>
