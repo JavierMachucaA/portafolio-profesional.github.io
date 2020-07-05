@@ -1,0 +1,15 @@
+{
+  "serverless": {
+    "provider": "aws",
+    "project": "personal-portfolio-angular",
+    "skipInstall": false,
+    "directory": ".",
+    "lambdaTS": false,
+    "offline": false,
+    "clientProject": "personal-portfolio-angular",
+    "serverless": {
+      "aws": {},
+      "gcloud": {}
+    }
+  }
+}
