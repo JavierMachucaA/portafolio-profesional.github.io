@@ -20,7 +20,9 @@
     "deploy": "serverless deploy",
     "build:server:prod": "webpack --config webpack.server.config.js --progress --colors",
     "build:server:serverless": "webpack --config webpack.server.config.js --progress --colors",
-    "heroku-postbuild": "cd ANGULAR_APP_FOLDER && npm install"
+    "heroku-postbuild": "cd ANGULAR_APP_FOLDER && npm install",
+    "preinstall": "npm install -g angular-cli",
+    "postinstall": "ng build && mv dist/* ."
   },
   "heroku-postbuild": "ng build --prod",
   "engines": {
